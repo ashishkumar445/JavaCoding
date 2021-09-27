@@ -5,10 +5,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ReversingArrayTest {
-
-    @Test
-    public void main() {
-        int[] arr = new int[]{1,2,3,4,5,8};
-        assertEquals(arr[i] +" ");
+    public static void main(String[]args){
+        ReversingArray r=new ReversingArray();
+        int[]rev=new int[]{4,5,7,7,8};
+        int result=r.getrevintArray(rev);
+        System.out.println(rev[result]);
     }
 }

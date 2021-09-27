@@ -1,19 +1,18 @@
 package com.array.java;
-
 public class DuplicateArray {
-    public static void main(String[]args)
-    {
-        int[]a={2,3,5,3,7,6};
-        System.out.println("False");
-        for(int i=0;i<a.length-1;i++)
-        {
-            for(int j=i+1;j<a.length;j++)
-            {
-                if (a[i]==a[j])
-                {
-                    System.out.println(a[j]+" ");
-                }
+    /**
+     *
+     * @param inputArray The array for which the duplicate number needs to be found
+     * @return The duplicate number in the array
+     */
+    int getDuplicateintArray(int[] inputArray) {
+        int duplicate = inputArray[0];
+        for (int i = 0; i < inputArray.length - 1; i++) {
+            for (int j = i + 1; j < inputArray.length; j++) {
+                if (inputArray[i] == inputArray[j]);
+
             }
         }
+        return duplicate;
     }
-}
+    }
